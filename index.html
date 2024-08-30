@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聴力検査</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>聴力検査</h1>
+      <div class="frequency-buttons">
+        <button data-freq="1000">1000 Hz</button>
+        <button data-freq="2000">2000 Hz</button>
+        <button data-freq="4000">4000 Hz</button>
+        <button data-freq="8000">8000 Hz</button>
+        <button data-freq="12000">12000 Hz</button>
+        <button data-freq="16000">16000 Hz</button>
+        <button data-freq="20000">20000 Hz</button>
+      </div>
+      <div class="volume-control">
+        <label for="volume">音量: </label>
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.5"
+        />
+      </div>
+      <button id="playButton">再生</button>
+      <p id="currentFreq">選択された周波数: - Hz</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
